@@ -11,21 +11,16 @@
   * You could install GraphQL playground to get a GUI to test the application
   * Alternatively you could enter [http://loclhost:8080/graphiql]() in your browser and a GUI will be provided for you
 * Query structure:
-  ```graphql
-  query{
+  * `query{
     shows{
     releaseYear
     title
     }
+    }`
+* Mutation structure:
+  * `mutation {
+    addShow(show:{title: "HIMYM", releaseYear:2010}) {
+    releaseYear
+    title
     }
-  ```
-  * Mutation structure:
-
-```graphql
-    mutation {
-      addShow(show:{title: "HIMYM", releaseYear:2010}) {
-      releaseYear
-      title
-      }
-      }
-```
+    }`
